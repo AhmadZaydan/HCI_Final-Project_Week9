@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Filter And Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div id="search-container">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search pet name here.."
+      />
+      <button id="search">Search</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterPet('all')">All</button>
+      <button class="button-value" onclick="filterPet('dog')">
+        Dogs
+      </button>
+      <button class="button-value" onclick="filterPet('cat')">
+        Cats
+      </button>
+      <button class="button-value" onclick="filterPet('bird')">
+        Birds
+      </button>
+      <button class="button-value" onclick="filterPet('others')">
+        Others
+      </button>
+    </div>
+    <div id="pets"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
